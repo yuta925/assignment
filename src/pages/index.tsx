@@ -1,6 +1,6 @@
 import Header from "@/components/Organisms/Header"
 import TokyoWeather from "@/components/Molecules/Weather"
-import FetchNews from "@/components/Molecules/News"
+import FetchNews from "@/components/Molecules/FetchNews"
 import TopicsNews from "@/components/Molecules/Topics"
 
 

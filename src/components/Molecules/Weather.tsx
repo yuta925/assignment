@@ -2,15 +2,16 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 interface WeatherData {
-  dt: number;
+  dt: number
   main: {
-    temp: number;
-    temp_min: number;
-    temp_max: number;
-  };
+    temp: number
+    temp_min: number
+    temp_max: number
+  }
   weather: {
-    icon: string;
-  }[];
+    icon: string
+  }[]
+  
 }
 
 const TokyoWeather: React.FC = () => {

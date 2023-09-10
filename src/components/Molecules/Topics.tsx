@@ -12,7 +12,7 @@ const TopicsNews: React.FC<{ keyword: string }> = ({ keyword }) => {
   const API_KEY = '6e7f026cad4c4a3f86195d765d535f73'; 
 
   useEffect(() => {
-    const fetchNews = async () => {
+    (async () => {
       try {
         const response = await axios.get('https://newsapi.org/v2/everything', {
           params: {
@@ -31,9 +31,7 @@ const TopicsNews: React.FC<{ keyword: string }> = ({ keyword }) => {
       } catch (error) {
         console.error("Error fetching the news:", error);
       }
-    };
-
-    fetchNews();
+    })();
   }, [keyword]);
 
   return (

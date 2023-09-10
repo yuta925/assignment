@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Header from "@/components/Organisms/Header";
-import FetchNews from "@/components/Molecules/News";
+import FetchNews from "@/components/Molecules/FetchNews";
 
 const Page = () => {
     const router = useRouter();
